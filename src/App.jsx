@@ -1,5 +1,7 @@
 import { QRCodeSVG } from 'qrcode.react';
 import './styles/index.css';
+
+import { baseURL } from './instance';
 import Title from './components/Title';
 import SubTitle from './components/SubTitle';
 import Container from './components/Container';
@@ -21,7 +23,7 @@ function App() {
         </>
       )}
       <div className='qrcode'>
-        <QRCodeSVG value='https://reactjs.org/' />
+        <QRCodeSVG value={`http://52.79.236.139/cards/1?mycard=3`} />
       </div>
     </div>
   );

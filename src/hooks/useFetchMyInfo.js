@@ -8,10 +8,7 @@ const useFetchMyInfo = () => {
     const cardKey = window.location.pathname.slice(1);
     return request({
       method: 'GET',
-      url: `/cards/me`,
-      headers: {
-        id: cardKey,
-      },
+      url: `/cards/me?id=${cardKey}`,
     });
   };
 
