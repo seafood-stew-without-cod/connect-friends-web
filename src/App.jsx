@@ -1,7 +1,6 @@
 import { QRCodeSVG } from 'qrcode.react';
 import './styles/index.css';
 
-import { baseURL } from './instance';
 import Title from './components/Title';
 import SubTitle from './components/SubTitle';
 import Container from './components/Container';
